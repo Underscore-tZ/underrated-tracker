@@ -1,6 +1,7 @@
 'use strict';
 
 let CLEARED_LEVELS = [];
+let forceUpdate;
 
 $(function () {
   $.ajaxSetup({ 'async': false });
@@ -317,4 +318,9 @@ $(function () {
   }
 
   generateContent();
+
+  forceUpdate = () => {
+    updateAllCheckboxes();
+    updateRoles();
+  }
 });
