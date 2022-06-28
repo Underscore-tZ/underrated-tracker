@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.13.1/jquery-ui.min.js"></script>
+  <script src="./index.js"></script>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      white-space: nowrap;
+    }
+
+    ul {
+      padding-left: 1em;
+    }
+
+    fieldset {
+      border: 1px solid black;
+      display: inline-block;
+      margin-bottom: 10px;
+      width: 20%;
+    }
+
+    .inner {
+      border: 1px solid black;
+      display: inline-block;
+      position: absolute;
+      height: 60vh;
+      margin: auto;
+      padding: 1em;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+
+<body style="background-color: DimGray">
+  <div id="tabs">
+      <fieldset id="difficulties">
+        <legend>Difficulties</legend>
+      </fieldset>
+      <fieldset id="packs">
+        <legend>Packs</legend>
+      </fieldset>
+      <fieldset style="position: absolute; right: 0px; margin: 1em" id="roles">
+        <legend>Roles</legend>
+      </fieldset> 
+  </div>
+</body>
+
+</html>
